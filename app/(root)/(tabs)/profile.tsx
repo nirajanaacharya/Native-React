@@ -18,7 +18,9 @@ export default function profile() {
   return (
     <SafeAreaView>
       <Text>Profile Page</Text>
-      <TouchableOpacity onPress={handleSignout}>Log Out</TouchableOpacity>
+      <TouchableOpacity onPress={handleSignout}>
+        <Text>Log Out</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
