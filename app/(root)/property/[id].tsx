@@ -24,7 +24,7 @@ import {
 import ImageViewing from "react-native-image-viewing";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
-import { useSavedProperty } from "../../../hooks/useSavedProperty";
+import useSavedProperty from "../../../hooks/useSavedProperty";
 
 const { width } = Dimensions.get("window");
 const ADMIN_PHONE = "919999999999"; // replace with your WhatsApp number

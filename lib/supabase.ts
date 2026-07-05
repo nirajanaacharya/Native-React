@@ -8,7 +8,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Authenticated client — pass this a getToken function from Clerk's useAuth()
 // This attaches the Clerk JWT to every Supabase request so RLS can identify the user
-export function createClerkSupabaseClient(
+export default function createClerkSupabaseClient(
   getToken: () => Promise<string | null>,
 ) {
   return createClient(supabaseUrl, supabaseAnonKey, {

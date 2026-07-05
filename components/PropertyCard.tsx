@@ -3,7 +3,7 @@ import { Property } from "@/types";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { useSavedProperty } from "../hooks/useSavedProperty";
+import useSavedProperty from "../hooks/useSavedProperty";
 
 export default function PropertyCard({
   property,
